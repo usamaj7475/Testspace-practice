@@ -1,0 +1,144 @@
+---
+testspace: Freight broker
+Title: Test Case
+Feature: Sign Up
+Test Designer: Usama javed
+Test Data:
+---
+# Freight broker  ##  FB-01
+**Test Case Type:**  Functional
+**Sub Feature:** Sign Up link
+
+**Scenario: **
+ To verify that the signup link redirects to the signup page.
+**Pre-conditions:-**
+User must have sign up link
+**Test Steps:-**
+1. Click on sign up link
+
+**Expected Result:-**
+User should be redirected to the signup screen
+**Unexpected Result:-**
+User is redirected to a 404 page.
+
+# Freight broker  ##  FB-02
+**Test Case Type:**  Functional
+**Sub Feature:** Sign Up with Google
+
+**Scenario: **
+ To verify that the signup with google works correctly
+**Pre-conditions:-**
+User must be on sign up page
+**Test Steps:-**
+1. Click on sign up with google
+
+**Expected Result:-**
+1.	Google login screen should open up
+2.	User should be able to login to Gmail
+3.	User should receive a verification email after successful Gmail login
+**Unexpected Result:-**
+1.	Sign up with google does not work.
+2.	User does not receive verification email
+
+# Freight broker  ##  FB-03
+**Test Case Type:**  Functional
+**Sub Feature:** Sign Up with Facebook 
+
+**Scenario: **
+ To verify that the signup with Facebook works correctly
+**Pre-conditions:-**
+User must be on sign up page
+**Test Steps:-**
+1. Click on sign up with Facebook
+
+**Expected Result:-**
+	User Should be see a Facebook login
+**Unexpected Result:-**
+User is redirected to a 404 page.
+
+# Freight broker  ##  FB-04
+**Test Case Type:**  Functional
+**Sub Feature:** Sign Up with form
+
+**Scenario: **
+ To verify that the signup with form
+**Pre-conditions:-**
+User must be on sign up page
+**Test Steps:-**
+1.	Enter name, email, password, confirm password
+2.	Click on Sign up
+**Expected Result:-**
+1.	User Should See a notification that “Account has been created”
+2.	User should receive a verification email.
+**Unexpected Result:-**
+1.	User already exists.
+2.	User does not receive a verification email
+
+# Freight broker  ##  FB-05
+**Test Case Type:**  Functional
+**Sub Feature:** Sign Up with already existing email 
+
+**Scenario: **
+ To verify that the signup with already existing email user should receive a notification that user already exists
+**Pre-conditions:-**
+User must be on sign up page
+**Test Steps:-**
+1.	Enter name, already existing email, password, confirm password
+2.	Click on Sign up
+**Expected Result:-**
+	User Should be notified that this email already exists.
+**Unexpected Result:-**
+User is able to sign-up with already existing email.
+
+# Freight broker  ##  FB-06
+**Test Case Type:**  Functional
+**Sub Feature:** Different passwords in both fields 
+
+**Scenario: **
+ To verify that the user see a notification that the passwords does not match
+**Pre-conditions:-**
+User must be on sign up page
+**Test Steps:-**
+1.	Enter name, email, a password, a different password in confirm password
+2.	Click on Sign up
+**Expected Result:-**
+	User Should be notified that the passwords in both fields does not match
+**Unexpected Result:-**
+User is able to sign-up with different passwords as well.
+
+# Freight broker  ##  FB-07
+**Test Case Type:**  Functional
+**Sub Feature:** login with unverified email address 
+
+**Scenario: **
+ To verify that the user is unable to login with unverified email address
+**Pre-conditions:-**
+1.	User must be on login page
+2.	User must have an email address which is unverified.
+**Test Steps:-**
+1.	Enter unverified email address and password
+2.	Click on login
+**Expected Result:-**
+	User Should be notified that this email is not verified.
+**Unexpected Result:-**
+User is able to login with unverified email.
+
+
+# Freight broker  ##  FB-08
+**Test Case Type:**  Functional
+**Sub Feature:** login with verified email address 
+
+**Scenario: **
+ To verify that the user is unable to login with unverified email address
+**Pre-conditions:-**
+3.	User must be on login page
+4.	User must have an email address which is unverified.
+**Test Steps:-**
+3.	Enter unverified email address and password
+4.	Click on login
+**Expected Result:-**
+	User Should be notified that this email is not verified.
+**Unexpected Result:-**
+User is able to login with unverified email.
+
+
